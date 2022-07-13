@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+
+/* Colours */
+    --greyBackground: #e8e5e5;
+    --button: #fb3f5c;
+    --primaryColor: #fb3f5c;
+    --textColor: #50534f;
+
+    --ln: 1px solid #424242;
+    --main-margin: 1rem;
+  }
+
+  body, html {
+    width: 100%;
+    height: 500vh;
+    background-color: var(--greyBackground);
+    margin: var(--main-margin);
+    border: var(--ln)
+  }
+
+
+  nav {
+    position: sticky;
+    top: 0;
+    height: 72px;
+    padding: 0 2rem;
+    border: var(--ln);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+
+  .navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+/* HERO */
+
+#hero {
+  min-height: 560px;
+  height: 80vh;
+  border-bottom: var(--ln);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr)
+}
+
+#hero > * {
+  grid-column: span 6;
+}
+
+#hero .left {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+h1 {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: var(--textColor);
+  font-size: 80px;
+}
+
+#Highlight {
+  color: var(--primaryColor)
+}
+
+#introCopy {
+  font-size: 16px;
+  color: var(--textColor);
+}
+
+button {
+  background-color: var(--button);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+#hero-img {
+  width: 100%;
+  height: 100%;
+  border: var(--ln);
+  transform: translateY(4rem);
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+/* Portfolio Section */
+
+main {
+  border-bottom: var(--ln);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+  padding: var(--main-margin);
+}
+
+main .card {
+  height: 400px;
+  border: var(--ln);
+  grid-column: span 6;
+  border-radius: 0.5rem;
+}
