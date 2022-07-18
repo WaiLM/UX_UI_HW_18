@@ -9,7 +9,7 @@
 
     
 <nav>
-    <div class="WaiBrand">
+    <div id="WaiBrand">
         <img src="images/WAI LOGO UXUI_PINK.png">
     </div>
 
@@ -25,32 +25,40 @@
                 </svg>
             </div>
     </div>
-
 </nav>
 
 
 <section id="hero">
-    <div class="left">
-      <h1 class="Hello">Hello, I'm <span id="Highlight">Wai</span></h1>
-      <p class="introCopy">A UX/UI designer based in Melbourne. I’m passionate about creating beautiful digital experiences that focus on the needs of the user.
+  <div class="left">
+      <h1 id="Hello">Hello, I'm <span class="Highlight">Wai</span></h1>
+      <p id="introCopy">A UX/UI designer based in Melbourne. I’m passionate about creating beautiful digital experiences that focus on the needs of the user.
         </p>
-      
-        <button>Download CV</button>
+      <button class="primary-button">Download CV</button>
     </div>
     
-    <div class="right">
+  <div class="right">
       <div id="hero-img">
-        <img src="./images/Hero Mockup Home Page.png">
+        <!-- Background image here -->
       </div>
     </div>
+
   </section>
+
+  <div class="section-header">
+    <div class="section-label">
+      <h2>Portfolio</h2>
+    </div>
+  </div>
   
+
   <main>
     <div class="card">
       <div class="card-hero"></div>
-      <h2>Case Study title goes here</h2>
-      <h4>Analyse a Government website and develop a resposive design to improve user experience.</h4>
-      <button class="white">View Case Study</button>
+      <div class="card-copy">
+        <h3>Case Study title goes here</h3>
+        <h4>Analyse a Government website and develop a resposive design to improve user experience.</h4>
+        <button class="secondary-button">View Case Study</button>
+      </div>
     </div>
 
 
@@ -59,6 +67,63 @@
     <div class="card"></div>
   </main>  
 
+<section class="about-me-section">
+  <!-- About me -->
+
+  <div id="left-about-me">
+    <h1 id="about-me">About <span class="Highlight">me</span></h1>
+    <p id="about-me-copy">A UX/UI designer based in Melbourne. I’m passionate about creating beautiful digital experiences that focus on the needs of the user.
+      </p>
+    <button class="primary-button">Download CV</button>
+  </div>
+
+  <!-- skills & tools section -->
+
+<div id="right-about-me">
+
+  <div class="skills">
+    <h3>Skills</h3>
+    <ul class="skills-list">
+      <li>Competitor Research</li>
+      <li>Persona Synthesis</li>
+      <li>User Research</li>
+      <li>User Testing</li>
+      <li>Wireframing</li>
+      <li>Information Architecture</li>
+      <li>Basic coding</li>
+      <li>Graphic Design</li>
+    </ul>
+  </div>
+
+  <div class="tools">
+    <h3>Tools</h3>
+    <ul class="skills-list">
+      <li>Competitor Research</li>
+      <li>Persona Synthesis</li>
+      <li>User Research</li>
+      <li>User Testing</li>
+      <li>Wireframing</li>
+      <li>Information Architecture</li>
+      <li>Basic coding</li>
+      <li>Graphic Design</li>
+  </ul>
+</div>
+
+</div>
+
+</section>
+
+  <!-- footer -->
+
+<footer>
+  <h2 class="reverse">Contact me</h2>
+  <ul class="contact-list">
+    <li>Wai Le Marshall</li>
+    <li>Mobile: 0420 123 456</li>
+    <li>contact@gmail.com</li>
+  </ul>
+  <div></div>
+</footer>
 
 </body>
 </html>
